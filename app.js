@@ -21,7 +21,10 @@ $(document).ready(function () {
           let template = "";
           tasks.forEach((task) => {
             template += `
-              <li>${task.name}</li>
+              <li>Name: ${task.name} 
+                <li>Description: ${task.description}</li>
+              </li>
+              <hr>
             `;
           });
           // Añadimos el resultado en container y volvemos a mostrar la card task-result
